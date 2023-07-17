@@ -1,11 +1,13 @@
-package homework;
+package homework.Saving;
 
-public class UserSaver implements Saveable {
-    public User user;
+import homework.User.User;
+
+public class UserSaver implements Savable {
     public UserSaver() {
     }
 
     public void saveUser(User user) {
         System.out.println("Save user:  id " + user.getId() + "  name " + user.getName());
     }
+
 }

@@ -1,6 +1,6 @@
-package homework;
+package homework.User;
 
-public class User extends Someone{
+public class User extends Someone {
     public Long id;
     public String name;
     public User(Long id, String name) {
@@ -18,11 +18,4 @@ public class User extends Someone{
         return String.format("%d,  %s", id, name);
     }
 
-    @Override
-    public void saveUser(User user) {
-    }
-
-    //@Override
-    public void reportUser(User user) {
-    }
 }

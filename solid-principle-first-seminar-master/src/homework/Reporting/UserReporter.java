@@ -1,7 +1,8 @@
-package homework;
+package homework.Reporting;
 
-public class UserReporter implements Reportable{
-    public User user;
+import homework.User.User;
+
+public class UserReporter implements Reportable {
     public UserReporter() {
     }
 
