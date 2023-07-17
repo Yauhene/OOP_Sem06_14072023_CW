@@ -1,8 +1,5 @@
 package homework.User;
 
-
-import homework.Saving.Savable;
-
 /**
  * Класс-родитель для всего сущего
  */
