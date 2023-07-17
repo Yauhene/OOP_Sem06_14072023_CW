@@ -3,14 +3,18 @@ package homework;
 public class Main {
 
     public static void main(String[] args) {
-        User user = new User("Bob");
-        user.persister.save();
-        user.persister.report();
+        UserSaver usSaver = new UserSaver();
+        UserReporter usReporter = new UserReporter();
 
+        User user = new User(1L,"Bob");
+        User user1 = new User(2L,"Tom");
         System.out.println();
 
-        User user1 = new User("Tom");
-        user1.persister.report();
-        user1.persister.save();
+        usSaver.saveUser(user);
+        usSaver.saveUser(user1);
+        System.out.println();
+
+        usReporter.reportUser(user);
+        usReporter.reportUser(user1);
     }
 }
